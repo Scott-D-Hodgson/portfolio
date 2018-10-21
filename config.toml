@@ -3,3 +3,17 @@ baseURL = "http://hodgson.hopto.org/"
 languageCode = "en-ca"
 title = "Scott D Hodgson"
 MetaDataFormat = "toml"
+DefaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+copyright = "Scott D Hodgson"
+[languages]
+  [languages.en]
+    title = "Scott D Hodgson"
+    languageName = "English"
+    contentDir = "content/en"
+    weight = 1
+  [languages.fr]
+    title = "Scott D Hodgson"
+    languageName = "Français"
+    contentDir = "content/fr"    
+    weight = 2

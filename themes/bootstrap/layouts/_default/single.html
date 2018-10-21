@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {{ partial "header.html" . }}
+</head>
+<body>
+  {{ partial "nav.html" . }}
+  {{ partial "breadcrumb.html" . }}
+  <div class="container-fluid">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+  </div>
+</body>
+</html>
