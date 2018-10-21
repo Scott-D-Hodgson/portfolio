@@ -17,3 +17,9 @@ copyright = "Scott D Hodgson"
     languageName = "Français"
     contentDir = "content/fr"    
     weight = 2
+[languages.en.taxonomies]
+  tag = "tags"
+  category = "categories"
+  hardware = "hardware"
+  software = "software"
+[languages.fr.taxonomies]

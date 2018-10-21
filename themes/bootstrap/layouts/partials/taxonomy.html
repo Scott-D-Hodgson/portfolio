@@ -1,0 +1,12 @@
+{{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+  <ul>
+    {{ range $key, $value := $taxonomy }}
+    <li><a href="{{ "/" | relLangURL}}{{ $taxonomyname | urlize | lower }}/{{ $key | urlize | lower }}">{{ $key }} ({{ len $value }})</a></li>
+          <ul>
+          {{ range $value.Pages }}
+              <li><a href="{{ .Permalink}}"> {{ .LinkTitle }} ({{ len $value.Pages }})</a> </li>
+          {{ end }}
+          </ul>
+    {{ end }}
+  </ul>
+{{ end }}
