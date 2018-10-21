@@ -1,0 +1,7 @@
+{{ partial "header.html" . }} 
+{{ partial "nav.html" . }}
+{{ .Content }}
+{{ range .Site.Sections }}
+  {{ .Title }}
+  {{ .Content }}
+{{ end }}
