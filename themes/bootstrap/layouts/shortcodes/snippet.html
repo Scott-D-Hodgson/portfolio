@@ -1,0 +1,4 @@
+{{ $location:=.Get 0 }}
+{{ with .Site.GetPage $location }}
+    {{ .Content }}
+{{ end }}
