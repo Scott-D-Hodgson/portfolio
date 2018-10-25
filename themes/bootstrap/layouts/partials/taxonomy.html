@@ -1,12 +1,11 @@
 {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
-  <ul>
+  <a class="btn btn-outline-primary btn-sm" href="{{ "/" | relLangURL}}{{ $taxonomyname | urlize | lower }}">{{ $taxonomyname }}  <span class="badge badge-light">{{ len $taxonomy }}</span></a>
     {{ range $key, $value := $taxonomy }}
-    <li><a href="{{ "/" | relLangURL}}{{ $taxonomyname | urlize | lower }}/{{ $key | urlize | lower }}">{{ $key }} ({{ len $value }})</a></li>
-          <ul>
-          {{ range $value.Pages }}
-              <li><a href="{{ .Permalink}}"> {{ .LinkTitle }} ({{ len $value.Pages }})</a> </li>
-          {{ end }}
-          </ul>
+    <a class="btn btn-outline-secondary btn-sm" href="{{ "/" | relLangURL}}{{ $taxonomyname | urlize | lower }}/{{ $key | urlize | lower }}">{{ $key }}  <span class="badge badge-light">{{ len $value }}</span></a>
+    <!--
+        {{ range $value.Pages }}
+            <a class="btn btn-outline-secondary btn-sm" href="{{ .Permalink}}"> {{ .LinkTitle }}</a>
+        {{ end }}
+    -->
     {{ end }}
-  </ul>
 {{ end }}

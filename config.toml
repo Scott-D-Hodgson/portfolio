@@ -22,4 +22,5 @@ copyright = "Scott D Hodgson"
   category = "categories"
   hardware = "hardware"
   software = "software"
+  command = "commands"
 [languages.fr.taxonomies]
