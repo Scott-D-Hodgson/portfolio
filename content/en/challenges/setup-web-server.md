@@ -22,7 +22,6 @@ In order to change the contents in the web site's root foler, the permissions wi
 
 {{% credit "pksato" "https://www.raspberrypi.org/forums/viewtopic.php?t=155067" %}}
 
-
 Initially the rights to the folder `/var/www` needs to be updated so that the pi account is the owner.
 {{% snippet "/snippets/web-root-ownership" %}}
 In addition, the folder needs to be updated to have the permissions set.
