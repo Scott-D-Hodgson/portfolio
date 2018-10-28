@@ -1,0 +1,4 @@
+{{ $location:=.Get "location" }}
+{{ with .Site.GetPage $location }}
+<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+{{ end }}
