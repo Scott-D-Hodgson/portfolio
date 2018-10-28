@@ -1,11 +1,14 @@
+<div class="taxonomy-cloud" style="width:100%; height:300px">
+</div>
+<script>
+    requirejs(['jqcloud'], function( jQCloud )
+    {
+    var words = [];
 {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
-  <a class="btn btn-outline-primary btn-sm" href="{{ "/" | relLangURL}}{{ $taxonomyname | urlize | lower }}">{{ $taxonomyname }}  <span class="badge badge-light">{{ len $taxonomy }}</span></a>
-    {{ range $key, $value := $taxonomy }}
-    <a class="btn btn-outline-secondary btn-sm" href="{{ "/" | relLangURL}}{{ $taxonomyname | urlize | lower }}/{{ $key | urlize | lower }}">{{ $key }}  <span class="badge badge-light">{{ len $value }}</span></a>
-    <!--
-        {{ range $value.Pages }}
-            <a class="btn btn-outline-secondary btn-sm" href="{{ .Permalink}}"> {{ .LinkTitle }}</a>
-        {{ end }}
-    -->
-    {{ end }}
+{{ range $key, $value := $taxonomy }}
+    words.push({text: {{ $key }}, weight: {{ len $value }}, link: "{{ "/" | relLangURL}}{{ $taxonomyname | urlize | lower }}/{{ $key | urlize | lower }}"});
 {{ end }}
+{{ end }}
+    $(".taxonomy-cloud").jQCloud(words, { autoResize: true });
+});
+</script>

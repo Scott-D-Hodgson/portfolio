@@ -1,9 +1,7 @@
 ---
 title: "Setup Go"
 date: 2018-10-25T18:53:10-04:00
-hardware: ["Raspberry Pi"]
-software: ["Raspbian", "Go"]
-commands: ["apt-get", "wget", "tar" ,"export", "nano"]
+tags: ["Raspberry Pi", "Raspbian", "Go"]
 ---
 
 In order to prepare the system for the installation of Go it is always a good idea to ensure that everything is up-to-date.  This is easily done through executing the following commands within a terminal window.

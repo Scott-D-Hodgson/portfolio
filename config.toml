@@ -19,8 +19,4 @@ copyright = "Scott D Hodgson"
     weight = 2
 [languages.en.taxonomies]
   tag = "tags"
-  category = "categories"
-  hardware = "hardware"
-  software = "software"
-  command = "commands"
 [languages.fr.taxonomies]
