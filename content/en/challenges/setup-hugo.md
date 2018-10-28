@@ -1,9 +1,7 @@
 ---
 title: "Setup Hugo"
 date: 2018-10-25T18:53:10-04:00
-hardware: ["Raspberry Pi"]
-software: ["Raspbian", "Hugo"]
-commands: ["apt-get", "git", "go", "mkdir", "cd"]
+tags: ["Raspberry Pi", "Raspbian", "Hugo", "Go"]
 ---
 This challenge was the result of trying to setup a Raspberry Pi to automatically download from a [GitHub](https://github.com) repository, build a Hugo site's public output, and update the hosted site.
 

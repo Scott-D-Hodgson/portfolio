@@ -1,8 +1,7 @@
 ---
 title: "Setup Web Server"
 date: 2018-10-20T22:53:10-04:00
-hardware: ["Raspberry Pi"]
-software: ["Raspbian", "Apache"]
+tags: ["Raspberry Pi", "Raspbian", "Apache"]
 ---
 
 ## Update the System
