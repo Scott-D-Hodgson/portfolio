@@ -22,7 +22,7 @@ $ sudo apt-get dist-upgrade
 
 There is, however, another way...
 
-Process
+## Process
 
 In order to permit your Raspberry Pi to perform the update/upgrade process automatically, all that is needed is to install the package for unattended upgrades.
 
