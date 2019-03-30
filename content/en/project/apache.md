@@ -1,5 +1,5 @@
 ---
-title: Apache
+title: 'How to Install: Apache'
 date: 2019-03-30T11:43:01.481Z
 ---
 The Apache web server is readily available from the standard repositories for the Raspbian OS through the typical terminal command.
