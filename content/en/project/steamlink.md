@@ -1,5 +1,5 @@
 ---
-title: Steamlink
+title: 'How to Install: Steamlink'
 date: 2019-03-28T18:14:16.399Z
 ---
 The Raspberry Pi can be used as a Steamlink device to enable game streaming from your home computer to another screen in your home.
