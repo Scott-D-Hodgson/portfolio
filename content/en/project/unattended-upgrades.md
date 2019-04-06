@@ -1,5 +1,5 @@
 ---
-title: 'How to Install: Unattended Upgrades'
+title: Install Unattended Upgrades
 date: 2019-03-28T15:54:12.924Z
 ---
 One of the common aspects of working with the Raspberry Pi is the need to perform regular maintenance to keep the system up and running properly.
