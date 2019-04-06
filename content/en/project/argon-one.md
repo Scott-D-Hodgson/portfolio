@@ -1,5 +1,5 @@
 ---
-title: 'How to Install: Argon One'
+title: Setup Argon One
 date: 2019-03-28T15:31:51.975Z
 ---
 Here's how to setup the Argon One for the Raspberry Pi.
